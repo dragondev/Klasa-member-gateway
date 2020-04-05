@@ -119,8 +119,8 @@ class MemberGateway extends GatewayStorage {
 			}
 
 			// Set all the remaining settings from unknown status in DB to not exists.
-			for (const guild of this.client.guilds.values()) {
-				for (const member of guild.members.values()) if (member.settings._existsInDB !== true) member.settings._existsInDB = false;
+			for (const guild of this.client.guilds.cache.values()) {
+				for (const member of guild.members.cache.values()) if (member.settings._existsInDB !== true) member.settings._existsInDB = false;
 			}
 			return this;
 		}
