@@ -8,10 +8,10 @@ Simple plugin to manage an efficient per-member settings gateway.
 
 ```bash
 # NPM
-$ npm install --save dirigeants/klasa-member-gateway
+$ npm install --save dragondev/Klasa-member-gateway
 
 # Yarn
-$ yarn add dirigeants/klasa-member-gateway
+$ yarn add dragondev/Klasa-member-gateway
 ```
 
 ## Setup
